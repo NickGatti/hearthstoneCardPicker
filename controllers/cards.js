@@ -36,7 +36,6 @@ module.exports = {
     },
 
     remove: function ( req, res ) {
-        console.log( req.session.deck.length, req.params.id );
         req.session.deck.splice( req.params.id, 1 )
         res.redirect( '/' );
     }
